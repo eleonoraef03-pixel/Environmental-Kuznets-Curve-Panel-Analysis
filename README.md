@@ -33,13 +33,24 @@ Alternative trend treatment based on **first differences**. The script:
 
 ## Data
 
-The scripts expect an Excel file named:
+The analysis uses an annual country-level panel dataset covering 19 countries from 2000 to 2021. The dataset used to run the MATLAB scripts is included in the repository as:
 
-```text
-DATI MATLAB.xlsx
-```
+`DATI MATLAB.xlsx`
 
-The dataset itself is **not included in this repository**. It contains annual country-level observations for the variables used in the project, including CO₂ emissions per capita, GDP per capita, electricity production from coal, renewable-energy consumption, trade, income concentration and selected variables used as candidate instruments.
+The dataset contains economic, environmental and energy-related variables, including:
+
+- CO₂ emissions per capita (`co2_pc`)
+- GDP per capita (`gdp_pc`)
+- Electricity production from coal (`elec_coal_pct`)
+- Renewable energy consumption (`ren_en_pct`)
+- Merchandise trade as a percentage of GDP (`trade_gdp_pct`)
+- Income share held by the highest 10% (`top10_inc_pct`)
+- Average years of schooling (`av_y_schooling`)
+- Real GDP growth (`r_gdp_growth`)
+- Crude oil prices (`crude_oil_prices`)
+- Gross capital formation per capita (`g_capital_form_pc`)
+
+The dataset was assembled for the academic project by combining variables from publicly available economic and environmental data sources. It is used to construct the panel-data models, alternative trend specifications and instrumental-variable analyses presented in the MATLAB scripts.
 
 # Main methods used
 
